@@ -1,3 +1,4 @@
 .env
 .idea
+#variables.py
 tests/.pytest_cache

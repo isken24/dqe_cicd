@@ -1,0 +1,6 @@
+SERVER = 'host.docker.internal'
+DATABASE = 'AdventureWorks2012'
+USERNAME = 'testlogin'
+PASSWORD = 'testPa$$24'
+DRIVER = 'ODBC Driver 17 for SQL Server'
+TDS_V = '7.0'
