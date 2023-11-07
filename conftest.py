@@ -1,11 +1,10 @@
 import pytest
 import pymssql
-from dotenv import load_dotenv
+from variables import *
 
 
 @pytest.fixture(scope='module')
 def connection_string():
-    load_dotenv()
     conn_str = f"""
                 server={SERVER},
                 user={USERNAME},
