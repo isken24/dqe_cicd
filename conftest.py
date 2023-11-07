@@ -12,7 +12,7 @@ def connection_string():
 
 @pytest.fixture(scope='module')
 def cnxn():
-    cnxn = pymssql.connect(server={SERVER},user={USERNAME},password={PASSWORD},database={DATABASE},tds_version={TDS_V})
+    cnxn = pymssql.connect(f'server={SERVER},user={USERNAME},password={PASSWORD},database={DATABASE},tds_version={TDS_V}')
     yield cnxn
     cnxn.close()
 
