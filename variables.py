@@ -1,4 +1,4 @@
-SERVER = '127.0.0.1'
+SERVER = 'host.docker.internal'
 DATABASE = 'AdventureWorks2012'
 USERNAME = 'testlogin'
 PASSWORD = 'testPa$$24'
