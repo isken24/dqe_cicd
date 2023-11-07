@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Starting tests....'
-                sh "./demo_run.sh"
+                sh "./run_tests.sh"
             }
         }
     }
