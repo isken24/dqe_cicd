@@ -1,7 +1,7 @@
 import pymssql
 
 conn = pymssql.connect(
-    server='127.0.0.1',
+    server='host.docker.internal',
     user='testlogin',
     password='testPa$$24',
     database='AdventureWorks2012',
