@@ -12,7 +12,11 @@ def connection_string():
 
 @pytest.fixture(scope='module')
 def cnxn():
-    cnxn = pymssql.connect(f'server={SERVER},user={USERNAME},password={PASSWORD},database={DATABASE},tds_version={TDS_V}')
+    cnxn = pymssql.connect(server='host.docker.internal',
+    user='testlogin',
+    password='testPa$$24',
+    database='AdventureWorks2012',
+    tds_version='7.0')
     yield cnxn
     cnxn.close()
 
