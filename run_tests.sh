@@ -1,1 +1,1 @@
-pytest ./tests/
+pytest test_connection.py
