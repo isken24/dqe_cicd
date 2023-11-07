@@ -1,0 +1,3 @@
+.env
+.idea
+tests/.pytest_cache
