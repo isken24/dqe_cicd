@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 @pytest.mark.person
-@pytest.mark.parametrize("expected_count", [19614, 19615, 0])
+@pytest.mark.parametrize("expected_count", [19614])
 def test_row_count(cursor, expected_count):
     """Check row count in Person.Address table"""
     cursor.execute('Select Count(*) from [Person].[Address]')
