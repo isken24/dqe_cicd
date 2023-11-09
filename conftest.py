@@ -1,6 +1,5 @@
 import pytest
 import pymssql
-from variables import *
 
 
 @pytest.fixture(scope='module')
