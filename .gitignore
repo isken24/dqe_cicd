@@ -1,4 +1,7 @@
 .env
 .idea
-#variables.py
+Dockerfile
+connection.py
+variables.py
 tests/.pytest_cache
+test_connection.py
