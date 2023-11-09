@@ -17,5 +17,11 @@ pipeline {
                 sh "./run_tests.sh"
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Deploing to DEV....'
+                echo 'Deployment completed'
+            }
+        }
     }
 }
